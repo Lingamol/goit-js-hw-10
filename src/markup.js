@@ -7,7 +7,7 @@ export function markupCountrys(countrys) {
                   srcset=""
                   src="${svg}"
                   alt="flags"
-                   width="30" height="30"/>
+                   width="30" height="20"/>
                 <p class="country-title">${official}</p>    
          
         </li>`;
@@ -29,7 +29,7 @@ export function markupCountryInfo({
                   srcset=""
                   src="${svg}"
                   alt="flag"
-                  width="30" height="30"
+                  width="40" height="30"
                 /><p class="country-title-info">${official}</p></div>
           <p><b>Capital</b>: ${capital}</p>
           <p><b>Population</b>: ${population}</p>

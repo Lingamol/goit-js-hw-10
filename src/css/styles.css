@@ -21,7 +21,7 @@ body {
 ul {
   list-style: none;
 }
-p {
+.country-title {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -40,4 +40,6 @@ p {
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
