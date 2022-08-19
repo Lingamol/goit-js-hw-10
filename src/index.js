@@ -27,9 +27,15 @@ function handelInput(e) {
             'Too many matches found. Please enter a more specific name.'
           );
         } else if (data.length > 1 && data.length <= 10) {
-          refs.countryList.innerHTML = markupCountrys(data);
+          refs.countryList.insertAdjacentHTML(
+            'beforeend',
+            markupCountrys(data)
+          );
         } else {
-          refs.countryInfo.innerHTML = markupCountryInfo(data[0]);
+          refs.countryInfo.insertAdjacentHTML(
+            'beforeend',
+            markupCountryInfo(data[0])
+          );
         }
       })
       .catch(error => {
