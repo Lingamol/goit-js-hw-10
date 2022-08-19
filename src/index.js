@@ -26,9 +26,8 @@ function handelInput(e) {
           Notiflix.Notify.info(
             'Too many matches found. Please enter a more specific name.'
           );
-        } else if (data.length > 1 && data.length < 10) {
+        } else if (data.length > 1 && data.length <= 10) {
           refs.countryList.innerHTML = markupCountrys(data);
-          console.log;
         } else {
           refs.countryInfo.innerHTML = markupCountryInfo(data[0]);
         }
@@ -37,7 +36,7 @@ function handelInput(e) {
         if (Number(error.message) === 404) {
           Notiflix.Notify.failure('Oops, there is no country with that name');
         } else {
-          console.log('errorFetch', error.message);
+          console.log('error:', error.message);
         }
       });
   }
